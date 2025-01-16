@@ -1,37 +1,74 @@
+/* General Reset */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
 }
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #e91e63;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 10px 20px;
 }
-nav {
-    margin: 10px 0;
+header .logo h1 {
+    margin: 0;
 }
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    margin: 0 15px;
     font-weight: bold;
 }
-main {
+nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #e91e63, #f48fb1);
+    color: white;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.hero .btn:hover {
+    background-color: #f8bbd0;
+}
+.services-overview {
+    text-align: center;
     padding: 20px;
+}
+.services-overview .service {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    display: inline-block;
+    width: 250px;
 }
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-section {
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
