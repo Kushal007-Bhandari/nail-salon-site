@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nails Artistry</title>
+    <meta name="description" content="Visit Nails Artistry, the premier nail salon in [City Name]. We offer luxurious manicures, pedicures, and custom nail art for every occasion.">
+    <meta name="keywords" content="nail salon, manicures, pedicures, nail art, beauty, Nails Artistry">
+    <meta name="author" content="Nails Artistry">
+    <meta name="robots" content="index, follow">
+    <title>Nails Artistry | Luxurious Nail Salon in [City Name]</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nails Artistry | Luxurious Nail Salon in [City Name]">
+    <meta property="og:description" content="Luxurious manicures, pedicures, and custom nail art. Your beauty, our passion. Book your appointment today!">
+    <meta property="og:image" content="https://example.com/nail-salon-image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -12,35 +24,35 @@
             <h1>Nails Artistry</h1>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" aria-label="Go to Home">Home</a>
+            <a href="services.html" aria-label="View Services">Services</a>
+            <a href="gallery.html" aria-label="Explore Gallery">Gallery</a>
+            <a href="about.html" aria-label="Learn About Us">About</a>
+            <a href="contact.html" aria-label="Contact Us">Contact</a>
         </nav>
     </header>
 
     <section class="hero">
         <h2>Your Beauty, Our Passion</h2>
         <p>Luxurious Nail Care & Designs</p>
-        <a href="contact.html" class="btn">Book Now</a>
+        <a href="contact.html" class="btn" aria-label="Book an Appointment Now">Book Now</a>
     </section>
 
     <section class="services-overview">
         <h2>Our Services</h2>
-        <div class="service">
-            <h3>Manicures</h3>
+        <div class="service" aria-labelledby="manicures">
+            <h3 id="manicures">Manicures</h3>
             <p>Professional nail shaping and polishing.</p>
         </div>
-        <div class="service">
-            <h3>Pedicures</h3>
+        <div class="service" aria-labelledby="pedicures">
+            <h3 id="pedicures">Pedicures</h3>
             <p>Relaxing foot care and treatments.</p>
         </div>
-        <div class="service">
-            <h3>Nail Art</h3>
+        <div class="service" aria-labelledby="nail-art">
+            <h3 id="nail-art">Nail Art</h3>
             <p>Custom designs for every occasion.</p>
         </div>
-        <a href="services.html" class="btn">View All Services</a>
+        <a href="services.html" class="btn" aria-label="View All Services">View All Services</a>
     </section>
 
     <section class="testimonials">
@@ -50,7 +62,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Nail Salon. All Rights Reserved.</p>
+        <p>&copy; 2025 Nails Artistry. All Rights Reserved.</p>
+        <p><a href="privacy-policy.html" aria-label="View Privacy Policy">Privacy Policy</a> | <a href="terms.html" aria-label="View Terms and Conditions">Terms & Conditions</a></p>
     </footer>
 </body>
 </html>

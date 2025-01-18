@@ -24,7 +24,7 @@ nav a {
     margin: 0 15px;
     font-weight: bold;
 }
-nav a:hover {
+nav a:hover, nav a:focus {
     text-decoration: underline;
 }
 .hero {
@@ -49,7 +49,7 @@ nav a:hover {
     font-weight: bold;
     border-radius: 5px;
 }
-.hero .btn:hover {
+.hero .btn:hover, .hero .btn:focus {
     background-color: #f8bbd0;
 }
 .services-overview {
@@ -64,6 +64,11 @@ nav a:hover {
     background-color: #fff;
     display: inline-block;
     width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services-overview .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 footer {
     background-color: #333;
@@ -71,4 +76,11 @@ footer {
     text-align: center;
     padding: 10px;
     margin-top: 20px;
+}
+footer a {
+    color: #e91e63;
+    text-decoration: none;
+}
+footer a:hover, footer a:focus {
+    text-decoration: underline;
 }
