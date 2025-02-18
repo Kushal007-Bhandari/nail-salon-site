@@ -13,7 +13,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #e91e63;
+    background: rgba(233, 30, 99, 0.8); /* Glass-like effect */
+    backdrop-filter: blur(10px);
     color: white;
     padding: 15px 20px;
     flex-wrap: wrap;
@@ -71,7 +72,15 @@ nav a:hover, nav a:focus {
     margin-bottom: 20px;
 }
 
-.hero .btn {
+/* Book Now Section */
+.book-now-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.book-now-btn {
     padding: 12px 25px;
     background-color: white;
     color: #e91e63;
@@ -80,9 +89,37 @@ nav a:hover, nav a:focus {
     border-radius: 5px;
     display: inline-block;
     font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
 }
 
-.hero .btn:hover, .hero .btn:focus {
+.book-now-btn:hover {
+    background-color: #f8bbd0;
+}
+
+/* Contact Options */
+.contact-options {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-options a {
+    padding: 12px 25px;
+    background-color: white;
+    color: #e91e63;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #e91e63;
+    text-align: center;
+    display: block;
+}
+
+.contact-options a:hover {
     background-color: #f8bbd0;
 }
 
